@@ -203,5 +203,28 @@ cython_debug/
 
 # Marimo
 marimo/_static/
+
+---
+
+# RIS-specific ignores
+semantic_memory.jsonl
+episodic_memory.jsonl
+router_logs/
+ingestion_cache/
+vector_store/
+*.db
+*.sqlite
+*.bin
+
+# LM Studio / local model artifacts
+models/
+*.gguf
+*.mlx
+*.safetensors
+
+# GUI state
+gui_state.json
+session_history/
+
 marimo/_lsp/
 __marimo__/
