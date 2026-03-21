@@ -1,0 +1,31 @@
+/* src/gui/styles.qss */
+
+QWidget {
+    font-family: -apple-system, system-ui, "SF Pro Text", "Helvetica Neue", Arial;
+    font-size: 13px;
+}
+
+QLabel[class="title"] {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px;
+}
+
+QTextEdit[class="transcript"] {
+    background: #111111;
+    color: #f5f5f5;
+    border: 1px solid #444444;
+    border-radius: 4px;
+}
+
+QLineEdit[class="input"] {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #666666;
+}
+
+QPushButton[class="send-button"] {
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+

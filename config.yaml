@@ -1,0 +1,28 @@
+# orchestrator/config.yaml
+
+projects:
+  EphA2: "Research project on EphA2 receptor signaling, cancer biology, and molecular mechanisms."
+  ODesign: "Graph neural network project using PyTorch Geometric, model design, and computational biology."
+  SystemArchitecture: "AI orchestrator design, memory systems, routing logic, and multi-model workflows."
+  Teaching: "Teaching responsibilities, grading, student interactions, and academic instruction."
+  ClassA: "Coursework for Class A including homework, assignments, and exams."
+  ClassB: "Coursework for Class B including problem sets, midterms, and lectures."
+  DnD: "Dungeons and Dragons campaigns, characters, worldbuilding, and session planning."
+  Personal: "Personal life, emotions, relationships, and general well-being."
+  Misc: "General topics that do not fit into other categories."
+
+thresholds:
+  tau_excl: 0.40
+  recency_lambda: 0.00005
+
+weights:
+  alpha: 0.60
+  beta: 0.30
+  gamma: 0.10
+
+retrieval:
+  top_k: 5
+
+model:
+  id: "dummy-model"
+

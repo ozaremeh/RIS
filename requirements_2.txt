@@ -1,0 +1,31 @@
+# --- GUI ---
+PyQt6==6.10.2
+PyQt6-WebEngine==6.10.0
+pyqtgraph
+
+# --- System monitoring ---
+psutil
+
+# --- Networking / API ---
+requests
+aiohttp
+
+# --- Document processing ---
+python-docx
+docx2python
+pypdf
+pyyaml
+
+# --- Ingestion pipeline ---
+watchdog
+
+# --- Vector store / embeddings ---
+lancedb
+sentence-transformers
+numpy
+scipy
+tqdm
+pyarrow
+orjson
+torch
+transformers
