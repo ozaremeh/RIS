@@ -1,1 +1,3 @@
-# Orchestrator
+# RIS
+Research Intelligence System
+
