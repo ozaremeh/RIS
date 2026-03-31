@@ -7,6 +7,7 @@ from typing import Any, Dict, List, Optional
 import aiohttp
 
 from model_registry import get_model
+from retrieval_architecture import architecture_query
 
 
 # ------------------------------------------------------------
@@ -78,7 +79,8 @@ class ParallelExecutor:
     Supports:
       - coder + reasoner parallelism
       - writer + reasoner parallelism
-      - future math + reasoner hybrid mode
+      - math + reasoner hybrid mode
+      - internal models (architecture)
     """
 
     def __init__(self, timeout: Optional[int] = None):
@@ -88,8 +90,33 @@ class ParallelExecutor:
         """
         Run a single model task.
         """
-        model_info = get_model(task.model_key)
 
+        model_info = get_model(task.model_key)
+        model_type = model_info.get("type")
+
+        # ------------------------------------------------------------
+        # NEW: Internal architecture model (non-LLM)
+        # ------------------------------------------------------------
+        if model_type == "internal" and task.model_key == "architecture":
+            try:
+                output = architecture_query(task.prompt)
+                return {
+                    "model": task.model_key,
+                    "output": str(output),
+                    "metadata": task.metadata,
+                    "error": None,
+                }
+            except Exception as e:
+                return {
+                    "model": task.model_key,
+                    "output": None,
+                    "metadata": task.metadata,
+                    "error": str(e),
+                }
+
+        # ------------------------------------------------------------
+        # LLM / embedding / router models (LM Studio)
+        # ------------------------------------------------------------
         try:
             output = await call_lmstudio_async(
                 model_name=model_info["model_name"],

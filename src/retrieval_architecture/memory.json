@@ -1,0 +1,3538 @@
+{
+  "large_module:retrieval_architecture.retrieval_architecture": {
+    "type": "large_module",
+    "severity": 0.8,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval_architecture.retrieval_architecture"
+  },
+  "high_coupling:classifier": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "classifier"
+  },
+  "high_coupling:prompt_builder": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "prompt_builder"
+  },
+  "high_coupling:memory": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "memory"
+  },
+  "high_coupling:vector_store": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "vector_store"
+  },
+  "high_coupling:model_executor": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "model_executor"
+  },
+  "high_coupling:nl_commands": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "nl_commands"
+  },
+  "high_coupling:memory_store": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "memory_store"
+  },
+  "high_coupling:semantic_memory": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "semantic_memory"
+  },
+  "high_coupling:project_router": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "project_router"
+  },
+  "high_coupling:embeddings": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "embeddings"
+  },
+  "high_coupling:llama_server_manager": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "llama_server_manager"
+  },
+  "high_coupling:retrieval": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval"
+  },
+  "high_coupling:architecture": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "architecture"
+  },
+  "high_coupling:parallel_executor": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "parallel_executor"
+  },
+  "high_coupling:assignment": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "assignment"
+  },
+  "high_coupling:semantic_extractor": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "semantic_extractor"
+  },
+  "high_coupling:document_tools": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "document_tools"
+  },
+  "high_coupling:model_router": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "model_router"
+  },
+  "high_coupling:main": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "main"
+  },
+  "high_coupling:api_client": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "api_client"
+  },
+  "high_coupling:ingestion.extract_metadata": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.extract_metadata"
+  },
+  "high_coupling:ingestion.chunker": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.chunker"
+  },
+  "high_coupling:ingestion.vector_store": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.vector_store"
+  },
+  "high_coupling:ingestion.dependency_graph": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.dependency_graph"
+  },
+  "high_coupling:ingestion.code_chunker": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.code_chunker"
+  },
+  "high_coupling:ingestion.code_scanner": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.code_scanner"
+  },
+  "high_coupling:ingestion.extract_text": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.extract_text"
+  },
+  "high_coupling:ingestion.pipeline": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.pipeline"
+  },
+  "high_coupling:ingestion.embedder": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.embedder"
+  },
+  "high_coupling:ingestion.call_graph": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.call_graph"
+  },
+  "high_coupling:ingestion.watcher": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.watcher"
+  },
+  "high_coupling:ingestion.module_metrics": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "ingestion.module_metrics"
+  },
+  "high_coupling:reasoning.rag_engine": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "reasoning.rag_engine"
+  },
+  "high_coupling:gui.main_window": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.main_window"
+  },
+  "high_coupling:gui.unified_memory_inspector": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.unified_memory_inspector"
+  },
+  "high_coupling:gui.__main__": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.__main__"
+  },
+  "high_coupling:gui.widgets.memory_inspector_widget": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.memory_inspector_widget"
+  },
+  "high_coupling:gui.widgets.model_status_panel": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.model_status_panel"
+  },
+  "high_coupling:gui.widgets.message_block": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.message_block"
+  },
+  "high_coupling:gui.widgets.document_panel": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.document_panel"
+  },
+  "high_coupling:gui.widgets.chat_panel": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.chat_panel"
+  },
+  "high_coupling:gui.widgets.system_monitor_graphs": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.system_monitor_graphs"
+  },
+  "high_coupling:gui.widgets.chat_stream_controller": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.chat_stream_controller"
+  },
+  "high_coupling:gui.widgets.system_monitor_stats": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.system_monitor_stats"
+  },
+  "high_coupling:gui.widgets.rag_query_panel": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.rag_query_panel"
+  },
+  "high_coupling:gui.widgets.system_monitor_panel": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "gui.widgets.system_monitor_panel"
+  },
+  "high_coupling:refactoring.refactor_engine": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "refactoring.refactor_engine"
+  },
+  "high_coupling:orchestrator.semantic_manager": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.semantic_manager"
+  },
+  "high_coupling:orchestrator.prompt_builder": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.prompt_builder"
+  },
+  "high_coupling:orchestrator.__init__": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.__init__"
+  },
+  "high_coupling:orchestrator.memory_pipeline": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.memory_pipeline"
+  },
+  "high_coupling:orchestrator.routing": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.routing"
+  },
+  "high_coupling:orchestrator.orchestrator": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.orchestrator"
+  },
+  "high_coupling:orchestrator.executor": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.executor"
+  },
+  "high_coupling:orchestrator.learned_router": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.learned_router"
+  },
+  "high_coupling:orchestrator.history": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "orchestrator.history"
+  },
+  "high_coupling:retrieval_architecture.memory_manager": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval_architecture.memory_manager"
+  },
+  "high_coupling:retrieval_architecture.handlers_code": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval_architecture.handlers_code"
+  },
+  "high_coupling:retrieval_architecture.handlers_structure": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval_architecture.handlers_structure"
+  },
+  "high_coupling:retrieval_architecture.handlers_refactor": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval_architecture.handlers_refactor"
+  },
+  "high_coupling:retrieval_architecture.retrieval_architecture": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval_architecture.retrieval_architecture"
+  },
+  "high_coupling:retrieval_architecture.router": {
+    "type": "high_coupling",
+    "severity": 0.7,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "module": "retrieval_architecture.router"
+  },
+  "complex_function:nl_commands._handle_pending_confirmation": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._handle_pending_confirmation"
+  },
+  "complex_function:llama_server_manager.launch_llama_server_if_needed": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "llama_server_manager.launch_llama_server_if_needed"
+  },
+  "complex_function:semantic_extractor._safe_json_extract": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_extractor._safe_json_extract"
+  },
+  "complex_function:document_tools.extract_tables": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.extract_tables"
+  },
+  "complex_function:ingestion.code_chunker.chunk_code_ast": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_chunker.chunk_code_ast"
+  },
+  "complex_function:orchestrator.routing.build_prompt_and_plan": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing.build_prompt_and_plan"
+  },
+  "complex_function:orchestrator.orchestrator.send_message": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.orchestrator.send_message"
+  },
+  "complex_function:orchestrator.orchestrator.send_message_streaming": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.orchestrator.send_message_streaming"
+  },
+  "complex_function:orchestrator.executor._merge_results": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.executor._merge_results"
+  },
+  "complex_function:retrieval_architecture.retrieval_architecture.architecture_query": {
+    "type": "complex_function",
+    "severity": 0.6,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.architecture_query"
+  },
+  "dead_code:config_loader.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "config_loader.__init__"
+  },
+  "dead_code:config_loader.load_config": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "config_loader.load_config"
+  },
+  "dead_code:classifier.classifier_scores": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "classifier.classifier_scores"
+  },
+  "dead_code:classifier.reasoning_type": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "classifier.reasoning_type"
+  },
+  "dead_code:classifier.topic_label": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "classifier.topic_label"
+  },
+  "dead_code:legacy_model_router.is_code_task": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "legacy_model_router.is_code_task"
+  },
+  "dead_code:legacy_model_router.choose_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "legacy_model_router.choose_model"
+  },
+  "dead_code:prompt_builder._project_names": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "prompt_builder._project_names"
+  },
+  "dead_code:prompt_builder._format_weights": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "prompt_builder._format_weights"
+  },
+  "dead_code:prompt_builder.build_prompt": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "prompt_builder.build_prompt"
+  },
+  "dead_code:memory._load_episodic_entries": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory._load_episodic_entries"
+  },
+  "dead_code:memory._save_episodic_entries": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory._save_episodic_entries"
+  },
+  "dead_code:memory._cosine_similarity": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory._cosine_similarity"
+  },
+  "dead_code:memory._apply_decay": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory._apply_decay"
+  },
+  "dead_code:memory.log_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory.log_message"
+  },
+  "dead_code:memory.retrieve_relevant_memory": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory.retrieve_relevant_memory"
+  },
+  "dead_code:vector_store.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "vector_store.__init__"
+  },
+  "dead_code:vector_store.add_entry": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "vector_store.add_entry"
+  },
+  "dead_code:vector_store.search": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "vector_store.search"
+  },
+  "dead_code:model_executor.run_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_executor.run_model"
+  },
+  "dead_code:model_executor.run_stubbed_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_executor.run_stubbed_model"
+  },
+  "dead_code:nl_commands.set_pending_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands.set_pending_facts"
+  },
+  "dead_code:nl_commands.clear_pending_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands.clear_pending_facts"
+  },
+  "dead_code:nl_commands._list_all_semantic_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._list_all_semantic_facts"
+  },
+  "dead_code:nl_commands._delete_fact_by_substring": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._delete_fact_by_substring"
+  },
+  "dead_code:nl_commands._update_fact_by_substring": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._update_fact_by_substring"
+  },
+  "dead_code:nl_commands._handle_pending_confirmation": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._handle_pending_confirmation"
+  },
+  "dead_code:nl_commands._handle_add_fact_command": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._handle_add_fact_command"
+  },
+  "dead_code:nl_commands._handle_list_facts_command": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._handle_list_facts_command"
+  },
+  "dead_code:nl_commands._handle_forget_command": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._handle_forget_command"
+  },
+  "dead_code:nl_commands._handle_update_command": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands._handle_update_command"
+  },
+  "dead_code:nl_commands.handle_nl_command": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "nl_commands.handle_nl_command"
+  },
+  "dead_code:memory_store._load_memory_from_disk": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory_store._load_memory_from_disk"
+  },
+  "dead_code:memory_store._append_to_disk": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory_store._append_to_disk"
+  },
+  "dead_code:memory_store.init_memory": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory_store.init_memory"
+  },
+  "dead_code:memory_store.log_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "memory_store.log_message"
+  },
+  "dead_code:semantic_memory._load_semantic_entries": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory._load_semantic_entries"
+  },
+  "dead_code:semantic_memory._save_semantic_entries": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory._save_semantic_entries"
+  },
+  "dead_code:semantic_memory._apply_decay": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory._apply_decay"
+  },
+  "dead_code:semantic_memory.add_semantic_fact": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory.add_semantic_fact"
+  },
+  "dead_code:semantic_memory._tokenize": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory._tokenize"
+  },
+  "dead_code:semantic_memory._jaccard_similarity": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory._jaccard_similarity"
+  },
+  "dead_code:semantic_memory.retrieve_semantic_memory": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory.retrieve_semantic_memory"
+  },
+  "dead_code:semantic_memory.list_semantic_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory.list_semantic_facts"
+  },
+  "dead_code:semantic_memory.remove_semantic_fact": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory.remove_semantic_fact"
+  },
+  "dead_code:semantic_memory.update_semantic_fact": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_memory.update_semantic_fact"
+  },
+  "dead_code:test_orchestrator.run_test": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "test_orchestrator.run_test"
+  },
+  "dead_code:project_router.build_prompt": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "project_router.build_prompt"
+  },
+  "dead_code:project_router.handle_user_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "project_router.handle_user_message"
+  },
+  "dead_code:embeddings._hash_to_seed": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "embeddings._hash_to_seed"
+  },
+  "dead_code:embeddings.embed_text": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "embeddings.embed_text"
+  },
+  "dead_code:embeddings.cosine_similarity": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "embeddings.cosine_similarity"
+  },
+  "dead_code:llama_server_manager.is_server_running": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "llama_server_manager.is_server_running"
+  },
+  "dead_code:llama_server_manager._server_is_ready": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "llama_server_manager._server_is_ready"
+  },
+  "dead_code:llama_server_manager.launch_llama_server_if_needed": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "llama_server_manager.launch_llama_server_if_needed"
+  },
+  "dead_code:llama_server_manager.stop_llama_server": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "llama_server_manager.stop_llama_server"
+  },
+  "dead_code:llama_server_manager.get_llama_server_status": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "llama_server_manager.get_llama_server_status"
+  },
+  "dead_code:retrieval._now": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval._now"
+  },
+  "dead_code:retrieval._power_law_recency": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval._power_law_recency"
+  },
+  "dead_code:retrieval._score_entry": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval._score_entry"
+  },
+  "dead_code:retrieval.retrieve_relevant_chunks": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval.retrieve_relevant_chunks"
+  },
+  "dead_code:architecture.load_architecture_graph": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "architecture.load_architecture_graph"
+  },
+  "dead_code:architecture.load_call_graph": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "architecture.load_call_graph"
+  },
+  "dead_code:architecture.load_module_metrics": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "architecture.load_module_metrics"
+  },
+  "dead_code:architecture.load_refactoring_suggestions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "architecture.load_refactoring_suggestions"
+  },
+  "dead_code:parallel_executor.call_lmstudio_async": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "parallel_executor.call_lmstudio_async"
+  },
+  "dead_code:parallel_executor.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "parallel_executor.__init__"
+  },
+  "dead_code:parallel_executor._run_single": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "parallel_executor._run_single"
+  },
+  "dead_code:parallel_executor.run": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "parallel_executor.run"
+  },
+  "dead_code:assignment.current_model_id": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "assignment.current_model_id"
+  },
+  "dead_code:assignment._sigma_assign": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "assignment._sigma_assign"
+  },
+  "dead_code:assignment.assign_projects": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "assignment.assign_projects"
+  },
+  "dead_code:test_models.test_qwen": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "test_models.test_qwen"
+  },
+  "dead_code:test_models.test_deepseek": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "test_models.test_deepseek"
+  },
+  "dead_code:semantic_extractor._safe_json_extract": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_extractor._safe_json_extract"
+  },
+  "dead_code:semantic_extractor.extract_semantic_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_extractor.extract_semantic_facts"
+  },
+  "dead_code:semantic_extractor.extract_and_store_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "semantic_extractor.extract_and_store_facts"
+  },
+  "dead_code:document_tools.flatten_runs": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.flatten_runs"
+  },
+  "dead_code:document_tools.load_docx": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.load_docx"
+  },
+  "dead_code:document_tools.extract_tables": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.extract_tables"
+  },
+  "dead_code:document_tools.extract_text_structure": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.extract_text_structure"
+  },
+  "dead_code:document_tools.extract_comments": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.extract_comments"
+  },
+  "dead_code:document_tools.extract_tracked_changes": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.extract_tracked_changes"
+  },
+  "dead_code:document_tools.extract_full_document_context": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.extract_full_document_context"
+  },
+  "dead_code:document_tools.apply_model_edits": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.apply_model_edits"
+  },
+  "dead_code:document_tools.save_docx": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "document_tools.save_docx"
+  },
+  "dead_code:model_router._safe_parse_router_json": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_router._safe_parse_router_json"
+  },
+  "dead_code:model_router.classify_intent_with_phi3": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_router.classify_intent_with_phi3"
+  },
+  "dead_code:model_router.rule_based_intent": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_router.rule_based_intent"
+  },
+  "dead_code:model_router.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_router.__init__"
+  },
+  "dead_code:model_router.route": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_router.route"
+  },
+  "dead_code:model_router._intent_to_plan": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_router._intent_to_plan"
+  },
+  "dead_code:model_router.to_tasks": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_router.to_tasks"
+  },
+  "dead_code:main.run_code_ingestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "main.run_code_ingestion"
+  },
+  "dead_code:main.main": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "main.main"
+  },
+  "dead_code:api_client.is_model_loaded": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "api_client.is_model_loaded"
+  },
+  "dead_code:api_client.get_loaded_models": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "api_client.get_loaded_models"
+  },
+  "dead_code:api_client.load_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "api_client.load_model"
+  },
+  "dead_code:api_client.unload_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "api_client.unload_model"
+  },
+  "dead_code:api_client.load_model_if_needed": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "api_client.load_model_if_needed"
+  },
+  "dead_code:api_client.call_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "api_client.call_model"
+  },
+  "dead_code:api_client.stream_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "api_client.stream_model"
+  },
+  "dead_code:model_registry.get_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_registry.get_model"
+  },
+  "dead_code:model_registry.get_port": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_registry.get_port"
+  },
+  "dead_code:model_registry.get_model_name": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_registry.get_model_name"
+  },
+  "dead_code:model_registry.list_models": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_registry.list_models"
+  },
+  "dead_code:model_registry.list_llms": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "model_registry.list_llms"
+  },
+  "dead_code:ingestion.extract_metadata.sha256_file": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_metadata.sha256_file"
+  },
+  "dead_code:ingestion.extract_metadata.extract_doi_from_text": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_metadata.extract_doi_from_text"
+  },
+  "dead_code:ingestion.extract_metadata.normalize_authors": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_metadata.normalize_authors"
+  },
+  "dead_code:ingestion.extract_metadata.extract_year_from_pdf_metadata": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_metadata.extract_year_from_pdf_metadata"
+  },
+  "dead_code:ingestion.extract_metadata.extract_metadata": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_metadata.extract_metadata"
+  },
+  "dead_code:ingestion.chunker.simple_tokenize": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.chunker.simple_tokenize"
+  },
+  "dead_code:ingestion.chunker.detokenize": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.chunker.detokenize"
+  },
+  "dead_code:ingestion.chunker.detect_section": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.chunker.detect_section"
+  },
+  "dead_code:ingestion.chunker.chunk_text": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.chunker.chunk_text"
+  },
+  "dead_code:ingestion.vector_store.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.__init__"
+  },
+  "dead_code:ingestion.vector_store._create_tables_locked": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store._create_tables_locked"
+  },
+  "dead_code:ingestion.vector_store._validate_schema": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store._validate_schema"
+  },
+  "dead_code:ingestion.vector_store.validate": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.validate"
+  },
+  "dead_code:ingestion.vector_store.paper_exists": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.paper_exists"
+  },
+  "dead_code:ingestion.vector_store.insert_paper": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.insert_paper"
+  },
+  "dead_code:ingestion.vector_store.insert_chunks": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.insert_chunks"
+  },
+  "dead_code:ingestion.vector_store.insert_code_chunks": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.insert_code_chunks"
+  },
+  "dead_code:ingestion.vector_store.search": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.search"
+  },
+  "dead_code:ingestion.vector_store.search_code": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.search_code"
+  },
+  "dead_code:ingestion.vector_store.get_paper_by_doi": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.get_paper_by_doi"
+  },
+  "dead_code:ingestion.vector_store.get_chunks_by_paper": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.vector_store.get_chunks_by_paper"
+  },
+  "dead_code:ingestion.dependency_graph.__len__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.__len__"
+  },
+  "dead_code:ingestion.dependency_graph.__iter__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.__iter__"
+  },
+  "dead_code:ingestion.dependency_graph.__repr__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.__repr__"
+  },
+  "dead_code:ingestion.dependency_graph.path_to_module": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.path_to_module"
+  },
+  "dead_code:ingestion.dependency_graph.extract_imports": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.extract_imports"
+  },
+  "dead_code:ingestion.dependency_graph.extract_classes_and_functions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.extract_classes_and_functions"
+  },
+  "dead_code:ingestion.dependency_graph.extract_calls": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.extract_calls"
+  },
+  "dead_code:ingestion.dependency_graph.build_dependency_graph": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.dependency_graph.build_dependency_graph"
+  },
+  "dead_code:ingestion.code_chunker.get_source_segment": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_chunker.get_source_segment"
+  },
+  "dead_code:ingestion.code_chunker.extract_imports": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_chunker.extract_imports"
+  },
+  "dead_code:ingestion.code_chunker.extract_classes": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_chunker.extract_classes"
+  },
+  "dead_code:ingestion.code_chunker.extract_functions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_chunker.extract_functions"
+  },
+  "dead_code:ingestion.code_chunker.extract_methods": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_chunker.extract_methods"
+  },
+  "dead_code:ingestion.code_chunker.chunk_code_ast": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_chunker.chunk_code_ast"
+  },
+  "dead_code:ingestion.background.start_background_ingestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.background.start_background_ingestion"
+  },
+  "dead_code:ingestion.background.run": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.background.run"
+  },
+  "dead_code:ingestion.code_scanner.is_valid_file": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_scanner.is_valid_file"
+  },
+  "dead_code:ingestion.code_scanner.scan_codebase": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.code_scanner.scan_codebase"
+  },
+  "dead_code:ingestion.extract_text.extract_pdf": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_text.extract_pdf"
+  },
+  "dead_code:ingestion.extract_text.extract_docx": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_text.extract_docx"
+  },
+  "dead_code:ingestion.extract_text.extract_plain": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_text.extract_plain"
+  },
+  "dead_code:ingestion.extract_text.normalize_text": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_text.normalize_text"
+  },
+  "dead_code:ingestion.extract_text.extract_text": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.extract_text.extract_text"
+  },
+  "dead_code:ingestion.pipeline.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.pipeline.__init__"
+  },
+  "dead_code:ingestion.pipeline.ingest": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.pipeline.ingest"
+  },
+  "dead_code:ingestion.pipeline.log": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.pipeline.log"
+  },
+  "dead_code:ingestion.pipeline.ingest_codebase": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.pipeline.ingest_codebase"
+  },
+  "dead_code:ingestion.embedder.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.embedder.__init__"
+  },
+  "dead_code:ingestion.embedder.embed": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.embedder.embed"
+  },
+  "dead_code:ingestion.embedder._mean_pooling": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.embedder._mean_pooling"
+  },
+  "dead_code:ingestion.call_graph.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph.__init__"
+  },
+  "dead_code:ingestion.call_graph.visit_FunctionDef": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph.visit_FunctionDef"
+  },
+  "dead_code:ingestion.call_graph.visit_AsyncFunctionDef": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph.visit_AsyncFunctionDef"
+  },
+  "dead_code:ingestion.call_graph.visit_ClassDef": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph.visit_ClassDef"
+  },
+  "dead_code:ingestion.call_graph.visit_Call": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph.visit_Call"
+  },
+  "dead_code:ingestion.call_graph._extract_callee_name": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph._extract_callee_name"
+  },
+  "dead_code:ingestion.call_graph.build_call_graph": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph.build_call_graph"
+  },
+  "dead_code:ingestion.call_graph._path_to_module": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.call_graph._path_to_module"
+  },
+  "dead_code:ingestion.watcher.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.watcher.__init__"
+  },
+  "dead_code:ingestion.watcher.on_created": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.watcher.on_created"
+  },
+  "dead_code:ingestion.watcher.start": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.watcher.start"
+  },
+  "dead_code:ingestion.watcher.stop": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.watcher.stop"
+  },
+  "dead_code:ingestion.module_metrics.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.__init__"
+  },
+  "dead_code:ingestion.module_metrics.visit_FunctionDef": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_FunctionDef"
+  },
+  "dead_code:ingestion.module_metrics.visit_AsyncFunctionDef": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_AsyncFunctionDef"
+  },
+  "dead_code:ingestion.module_metrics.visit_ClassDef": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_ClassDef"
+  },
+  "dead_code:ingestion.module_metrics._bump_complexity": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics._bump_complexity"
+  },
+  "dead_code:ingestion.module_metrics.visit_If": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_If"
+  },
+  "dead_code:ingestion.module_metrics.visit_For": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_For"
+  },
+  "dead_code:ingestion.module_metrics.visit_While": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_While"
+  },
+  "dead_code:ingestion.module_metrics.visit_Try": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_Try"
+  },
+  "dead_code:ingestion.module_metrics.visit_With": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_With"
+  },
+  "dead_code:ingestion.module_metrics.visit_BoolOp": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.visit_BoolOp"
+  },
+  "dead_code:ingestion.module_metrics.build_module_metrics": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics.build_module_metrics"
+  },
+  "dead_code:ingestion.module_metrics._path_to_module": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "ingestion.module_metrics._path_to_module"
+  },
+  "dead_code:reasoning.rag_engine.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "reasoning.rag_engine.__init__"
+  },
+  "dead_code:reasoning.rag_engine.retrieve": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "reasoning.rag_engine.retrieve"
+  },
+  "dead_code:reasoning.rag_engine._lookup_metadata": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "reasoning.rag_engine._lookup_metadata"
+  },
+  "dead_code:reasoning.rag_engine.build_prompt": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "reasoning.rag_engine.build_prompt"
+  },
+  "dead_code:reasoning.rag_engine._format_sources": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "reasoning.rag_engine._format_sources"
+  },
+  "dead_code:reasoning.rag_engine.query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "reasoning.rag_engine.query"
+  },
+  "dead_code:gui.main_window.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.main_window.__init__"
+  },
+  "dead_code:gui.main_window._create_router_debug_panel": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.main_window._create_router_debug_panel"
+  },
+  "dead_code:gui.main_window.update_router_debug": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.main_window.update_router_debug"
+  },
+  "dead_code:gui.main_window.update_memory_status": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.main_window.update_memory_status"
+  },
+  "dead_code:gui.main_window.closeEvent": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.main_window.closeEvent"
+  },
+  "dead_code:gui.unified_memory_inspector._run": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector._run"
+  },
+  "dead_code:gui.unified_memory_inspector.get_process_rss_mb_by_name": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_process_rss_mb_by_name"
+  },
+  "dead_code:gui.unified_memory_inspector.get_lmstudio_rss_mb": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_lmstudio_rss_mb"
+  },
+  "dead_code:gui.unified_memory_inspector.get_llamacpp_rss_mb": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_llamacpp_rss_mb"
+  },
+  "dead_code:gui.unified_memory_inspector.get_python_orchestrator_rss_mb": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_python_orchestrator_rss_mb"
+  },
+  "dead_code:gui.unified_memory_inspector.get_vm_stat_pages": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_vm_stat_pages"
+  },
+  "dead_code:gui.unified_memory_inspector.get_page_size_bytes": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_page_size_bytes"
+  },
+  "dead_code:gui.unified_memory_inspector.get_system_memory_snapshot_mb": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_system_memory_snapshot_mb"
+  },
+  "dead_code:gui.unified_memory_inspector.pages_to_mb": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.pages_to_mb"
+  },
+  "dead_code:gui.unified_memory_inspector.get_memory_pressure_summary": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_memory_pressure_summary"
+  },
+  "dead_code:gui.unified_memory_inspector.get_unified_memory_snapshot": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.unified_memory_inspector.get_unified_memory_snapshot"
+  },
+  "dead_code:gui.__main__.main": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.__main__.main"
+  },
+  "dead_code:gui.widgets.memory_inspector_widget.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.memory_inspector_widget.__init__"
+  },
+  "dead_code:gui.widgets.memory_inspector_widget.update_snapshot": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.memory_inspector_widget.update_snapshot"
+  },
+  "dead_code:gui.widgets.model_status_panel.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.model_status_panel.__init__"
+  },
+  "dead_code:gui.widgets.model_status_panel.update_status": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.model_status_panel.update_status"
+  },
+  "dead_code:gui.widgets.status_controller.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.status_controller.__init__"
+  },
+  "dead_code:gui.widgets.status_controller._refresh": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.status_controller._refresh"
+  },
+  "dead_code:gui.widgets.message_block.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block.__init__"
+  },
+  "dead_code:gui.widgets.message_block._render_html": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block._render_html"
+  },
+  "dead_code:gui.widgets.message_block._update_height": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block._update_height"
+  },
+  "dead_code:gui.widgets.message_block._compute_height": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block._compute_height"
+  },
+  "dead_code:gui.widgets.message_block._apply_height": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block._apply_height"
+  },
+  "dead_code:gui.widgets.message_block._escape_html": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block._escape_html"
+  },
+  "dead_code:gui.widgets.message_block._color_for_role": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block._color_for_role"
+  },
+  "dead_code:gui.widgets.message_block.set_text": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block.set_text"
+  },
+  "dead_code:gui.widgets.message_block.sizeHint": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.message_block.sizeHint"
+  },
+  "dead_code:gui.widgets.document_panel.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.document_panel.__init__"
+  },
+  "dead_code:gui.widgets.document_panel._build_ui": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.document_panel._build_ui"
+  },
+  "dead_code:gui.widgets.document_panel._open_document": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.document_panel._open_document"
+  },
+  "dead_code:gui.widgets.document_panel._update_preview": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.document_panel._update_preview"
+  },
+  "dead_code:gui.widgets.document_panel._send_to_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.document_panel._send_to_model"
+  },
+  "dead_code:gui.widgets.document_panel._save_document": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.document_panel._save_document"
+  },
+  "dead_code:gui.widgets.chat_panel.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel.__init__"
+  },
+  "dead_code:gui.widgets.chat_panel.keyPressEvent": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel.keyPressEvent"
+  },
+  "dead_code:gui.widgets.chat_panel._build_ui": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._build_ui"
+  },
+  "dead_code:gui.widgets.chat_panel._connect_signals": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._connect_signals"
+  },
+  "dead_code:gui.widgets.chat_panel._append_block": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._append_block"
+  },
+  "dead_code:gui.widgets.chat_panel._append_system": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._append_system"
+  },
+  "dead_code:gui.widgets.chat_panel._append_user": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._append_user"
+  },
+  "dead_code:gui.widgets.chat_panel._start_typing_indicator": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._start_typing_indicator"
+  },
+  "dead_code:gui.widgets.chat_panel._stop_typing_indicator": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._stop_typing_indicator"
+  },
+  "dead_code:gui.widgets.chat_panel._on_send_clicked": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._on_send_clicked"
+  },
+  "dead_code:gui.widgets.chat_panel._update_router_log": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._update_router_log"
+  },
+  "dead_code:gui.widgets.chat_panel._scroll_to_bottom": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_panel._scroll_to_bottom"
+  },
+  "dead_code:gui.widgets.system_monitor_graphs.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_graphs.__init__"
+  },
+  "dead_code:gui.widgets.system_monitor_graphs._build_ui": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_graphs._build_ui"
+  },
+  "dead_code:gui.widgets.system_monitor_graphs._configure_small_plot": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_graphs._configure_small_plot"
+  },
+  "dead_code:gui.widgets.system_monitor_graphs._start_timer": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_graphs._start_timer"
+  },
+  "dead_code:gui.widgets.system_monitor_graphs._update_graphs": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_graphs._update_graphs"
+  },
+  "dead_code:gui.widgets.chat_stream_controller.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_stream_controller.__init__"
+  },
+  "dead_code:gui.widgets.chat_stream_controller.start_assistant_block": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_stream_controller.start_assistant_block"
+  },
+  "dead_code:gui.widgets.chat_stream_controller.append_token": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_stream_controller.append_token"
+  },
+  "dead_code:gui.widgets.chat_stream_controller.finalize": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_stream_controller.finalize"
+  },
+  "dead_code:gui.widgets.chat_stream_controller._scroll_to_widget_top": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.chat_stream_controller._scroll_to_widget_top"
+  },
+  "dead_code:gui.widgets.system_monitor_stats.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_stats.__init__"
+  },
+  "dead_code:gui.widgets.system_monitor_stats._build_ui": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_stats._build_ui"
+  },
+  "dead_code:gui.widgets.system_monitor_stats._start_timer": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_stats._start_timer"
+  },
+  "dead_code:gui.widgets.system_monitor_stats._update_stats": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_stats._update_stats"
+  },
+  "dead_code:gui.widgets.system_monitor_stats._find_lmstudio_ram": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_stats._find_lmstudio_ram"
+  },
+  "dead_code:gui.widgets.rag_query_panel.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.rag_query_panel.__init__"
+  },
+  "dead_code:gui.widgets.rag_query_panel.run_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.rag_query_panel.run_query"
+  },
+  "dead_code:gui.widgets.system_monitor_panel.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_panel.__init__"
+  },
+  "dead_code:gui.widgets.system_monitor_panel._build_ui": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_panel._build_ui"
+  },
+  "dead_code:gui.widgets.system_monitor_panel._configure_small_plot": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_panel._configure_small_plot"
+  },
+  "dead_code:gui.widgets.system_monitor_panel._start_timer": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_panel._start_timer"
+  },
+  "dead_code:gui.widgets.system_monitor_panel._update_stats": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_panel._update_stats"
+  },
+  "dead_code:gui.widgets.system_monitor_panel._find_lmstudio_ram": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "gui.widgets.system_monitor_panel._find_lmstudio_ram"
+  },
+  "dead_code:refactoring.refactor_engine.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine.__init__"
+  },
+  "dead_code:refactoring.refactor_engine.suggest_refactors": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine.suggest_refactors"
+  },
+  "dead_code:refactoring.refactor_engine._detect_large_modules": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine._detect_large_modules"
+  },
+  "dead_code:refactoring.refactor_engine._detect_long_functions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine._detect_long_functions"
+  },
+  "dead_code:refactoring.refactor_engine._detect_high_coupling": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine._detect_high_coupling"
+  },
+  "dead_code:refactoring.refactor_engine._detect_circular_dependencies": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine._detect_circular_dependencies"
+  },
+  "dead_code:refactoring.refactor_engine._detect_dead_code": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine._detect_dead_code"
+  },
+  "dead_code:refactoring.refactor_engine._detect_complex_functions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "refactoring.refactor_engine._detect_complex_functions"
+  },
+  "dead_code:orchestrator.logging.log_event": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.logging.log_event"
+  },
+  "dead_code:orchestrator.semantic_manager.set_pending_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.semantic_manager.set_pending_facts"
+  },
+  "dead_code:orchestrator.semantic_manager.has_pending_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.semantic_manager.has_pending_facts"
+  },
+  "dead_code:orchestrator.semantic_manager.consume_pending_facts": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.semantic_manager.consume_pending_facts"
+  },
+  "dead_code:orchestrator.semantic_manager.extract_facts_from_user_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.semantic_manager.extract_facts_from_user_message"
+  },
+  "dead_code:orchestrator.semantic_manager.interpret_confirmation_reply": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.semantic_manager.interpret_confirmation_reply"
+  },
+  "dead_code:orchestrator.semantic_manager.handle_confirmation_reply": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.semantic_manager.handle_confirmation_reply"
+  },
+  "dead_code:orchestrator.prompt_builder.build_orchestrator_prompt": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.prompt_builder.build_orchestrator_prompt"
+  },
+  "dead_code:orchestrator.__init__.send_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.__init__.send_message"
+  },
+  "dead_code:orchestrator.__init__.send_message_streaming": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.__init__.send_message_streaming"
+  },
+  "dead_code:orchestrator.__init__.reset_history": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.__init__.reset_history"
+  },
+  "dead_code:orchestrator.__init__.get_history": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.__init__.get_history"
+  },
+  "dead_code:orchestrator.__init__.route_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.__init__.route_model"
+  },
+  "dead_code:orchestrator.__init__.process_memory_pipeline": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.__init__.process_memory_pipeline"
+  },
+  "dead_code:orchestrator.__init__.log_event": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.__init__.log_event"
+  },
+  "dead_code:orchestrator.memory_pipeline.maybe_handle_memory_mode_command": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.memory_pipeline.maybe_handle_memory_mode_command"
+  },
+  "dead_code:orchestrator.memory_pipeline.process_memory_pipeline": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.memory_pipeline.process_memory_pipeline"
+  },
+  "dead_code:orchestrator.lifecycle.handle_specialist_continuity": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.lifecycle.handle_specialist_continuity"
+  },
+  "dead_code:orchestrator.routing.log_event": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing.log_event"
+  },
+  "dead_code:orchestrator.routing._safe_json_parse": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing._safe_json_parse"
+  },
+  "dead_code:orchestrator.routing._heuristic_intent": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing._heuristic_intent"
+  },
+  "dead_code:orchestrator.routing._looks_like_rag_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing._looks_like_rag_query"
+  },
+  "dead_code:orchestrator.routing._choose_model_from_intent": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing._choose_model_from_intent"
+  },
+  "dead_code:orchestrator.routing._fallback_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing._fallback_model"
+  },
+  "dead_code:orchestrator.routing.build_prompt_and_plan": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.routing.build_prompt_and_plan"
+  },
+  "dead_code:orchestrator.orchestrator.__init__": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.orchestrator.__init__"
+  },
+  "dead_code:orchestrator.orchestrator.generate": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.orchestrator.generate"
+  },
+  "dead_code:orchestrator.orchestrator.send_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.orchestrator.send_message"
+  },
+  "dead_code:orchestrator.orchestrator.send_message_streaming": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.orchestrator.send_message_streaming"
+  },
+  "dead_code:orchestrator.orchestrator.reset_history": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.orchestrator.reset_history"
+  },
+  "dead_code:orchestrator.executor._merge_results": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.executor._merge_results"
+  },
+  "dead_code:orchestrator.executor.run_single_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.executor.run_single_model"
+  },
+  "dead_code:orchestrator.executor.run_rag_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.executor.run_rag_model"
+  },
+  "dead_code:orchestrator.executor.run_parallel_models": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.executor.run_parallel_models"
+  },
+  "dead_code:orchestrator.executor.select_streaming_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.executor.select_streaming_model"
+  },
+  "dead_code:orchestrator.executor.run_internal_model": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.executor.run_internal_model"
+  },
+  "dead_code:orchestrator.learned_router.choose_model_learned": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.learned_router.choose_model_learned"
+  },
+  "dead_code:orchestrator.history._log_event": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.history._log_event"
+  },
+  "dead_code:orchestrator.history.get_history": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.history.get_history"
+  },
+  "dead_code:orchestrator.history.append_user_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.history.append_user_message"
+  },
+  "dead_code:orchestrator.history.append_assistant_message": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.history.append_assistant_message"
+  },
+  "dead_code:orchestrator.history.reset_history": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "orchestrator.history.reset_history"
+  },
+  "dead_code:retrieval_architecture.memory_manager.load_memory": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.memory_manager.load_memory"
+  },
+  "dead_code:retrieval_architecture.memory_manager.save_memory": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.memory_manager.save_memory"
+  },
+  "dead_code:retrieval_architecture.memory_manager._make_key": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.memory_manager._make_key"
+  },
+  "dead_code:retrieval_architecture.memory_manager.update_memory_with_suggestions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.memory_manager.update_memory_with_suggestions"
+  },
+  "dead_code:retrieval_architecture.memory_manager.mark_resolved": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.memory_manager.mark_resolved"
+  },
+  "dead_code:retrieval_architecture.memory_manager.get_unresolved_issues": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.memory_manager.get_unresolved_issues"
+  },
+  "dead_code:retrieval_architecture.memory_manager.get_architecture_history": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.memory_manager.get_architecture_history"
+  },
+  "dead_code:retrieval_architecture.handlers_code.handle_show_code_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_code.handle_show_code_query"
+  },
+  "dead_code:retrieval_architecture.handlers_code.extract_function_code": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_code.extract_function_code"
+  },
+  "dead_code:retrieval_architecture.handlers_structure.get_graph": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_structure.get_graph"
+  },
+  "dead_code:retrieval_architecture.handlers_structure.find_importers": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_structure.find_importers"
+  },
+  "dead_code:retrieval_architecture.handlers_structure.find_callers": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_structure.find_callers"
+  },
+  "dead_code:retrieval_architecture.handlers_structure.list_classes": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_structure.list_classes"
+  },
+  "dead_code:retrieval_architecture.handlers_structure.list_functions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_structure.list_functions"
+  },
+  "dead_code:retrieval_architecture.handlers_structure.module_dependencies": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_structure.module_dependencies"
+  },
+  "dead_code:retrieval_architecture.handlers_structure.handle_structure_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_structure.handle_structure_query"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor.handle_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor.handle_refactor_query"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor._format_single_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor._format_single_suggestion"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor.handle_explain_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor.handle_explain_query"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor._explain_single_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor._explain_single_suggestion"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor.handle_apply_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor.handle_apply_refactor_query"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor._generate_patch_for_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor._generate_patch_for_suggestion"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor.handle_refactor_task_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor.handle_refactor_task_query"
+  },
+  "dead_code:retrieval_architecture.handlers_refactor._generate_task_for_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.handlers_refactor._generate_task_for_suggestion"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture._safe": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture._safe"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.get_graph": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.get_graph"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.find_importers": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.find_importers"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.find_callers": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.find_callers"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.list_classes": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.list_classes"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.list_functions": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.list_functions"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.module_dependencies": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.module_dependencies"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.is_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.is_refactor_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.is_explain_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.is_explain_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.is_show_code_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.is_show_code_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.is_apply_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.is_apply_refactor_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.is_refactor_task_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.is_refactor_task_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.handle_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.handle_refactor_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture._format_single_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture._format_single_suggestion"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.handle_explain_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.handle_explain_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture._explain_single_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture._explain_single_suggestion"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.handle_show_code_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.handle_show_code_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture._module_to_path": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture._module_to_path"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture._extract_function_code": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture._extract_function_code"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.handle_apply_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.handle_apply_refactor_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture._generate_patch_for_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture._generate_patch_for_suggestion"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.handle_refactor_task_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.handle_refactor_task_query"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture._generate_task_for_suggestion": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture._generate_task_for_suggestion"
+  },
+  "dead_code:retrieval_architecture.retrieval_architecture.architecture_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.retrieval_architecture.architecture_query"
+  },
+  "dead_code:retrieval_architecture.utils.module_to_path": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.utils.module_to_path"
+  },
+  "dead_code:retrieval_architecture.router.is_explicit_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.is_explicit_refactor_query"
+  },
+  "dead_code:retrieval_architecture.router.is_implicit_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.is_implicit_refactor_query"
+  },
+  "dead_code:retrieval_architecture.router.is_explain_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.is_explain_query"
+  },
+  "dead_code:retrieval_architecture.router.is_show_code_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.is_show_code_query"
+  },
+  "dead_code:retrieval_architecture.router.is_apply_refactor_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.is_apply_refactor_query"
+  },
+  "dead_code:retrieval_architecture.router.is_refactor_task_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.is_refactor_task_query"
+  },
+  "dead_code:retrieval_architecture.router.is_memory_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.is_memory_query"
+  },
+  "dead_code:retrieval_architecture.router.architecture_query": {
+    "type": "dead_code",
+    "severity": 0.5,
+    "status": "unresolved",
+    "first_detected": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "function": "retrieval_architecture.router.architecture_query"
+  }
+}

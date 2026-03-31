@@ -101,6 +101,7 @@ INTENT_TO_MODEL = {
     "reasoning_deep": "writer",      # Qwen‑72B
     "writing": "writer",
     "retrieval": "writer",           # embedder handled separately
+    "architecture": "architecture",
     "general": "reasoner",
 }
 
@@ -114,6 +115,15 @@ FALLBACK_MODELS = ["reasoner"]
 
 def _heuristic_intent(user_message: str) -> Optional[str]:
     text = user_message.lower()
+
+        # Architecture / codebase introspection
+    if any(k in text for k in [
+        "your architecture", "system architecture", "module structure",
+        "dependency graph", "codebase", "how are you built",
+        "your modules", "your orchestrator", "your ingestion pipeline",
+        "architecture of your system", "architecture engine"
+    ]):
+        return "architecture"
 
     # Coding
     if any(k in text for k in ["python", "code", "function", "class", "bug", "stack trace", "traceback"]):

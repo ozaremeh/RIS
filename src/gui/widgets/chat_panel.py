@@ -6,7 +6,6 @@ import json
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QTextEdit, QPushButton,
     QLabel, QTabWidget, QComboBox, QScrollArea, QSizePolicy,
-    QFrame
 )
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QTextCursor
@@ -19,7 +18,7 @@ from gui.widgets.system_monitor_graphs import SystemMonitorGraphs
 
 
 # ----------------------------------------------------------
-# Updated model selector options
+# Model selector options (labels → override keys)
 # ----------------------------------------------------------
 
 MODEL_OPTIONS = {
@@ -53,7 +52,7 @@ class ChatPanel(QWidget):
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
 
-        self.model_override = None
+        self.model_override = None  # updated by dropdown
 
         self._build_ui()
         self._connect_signals()
@@ -66,8 +65,7 @@ class ChatPanel(QWidget):
             scroll_area=self.scroll_area
         )
 
-        # Removed StatusController entirely
-
+        # Initial system messages (UI only)
         self._append_system("Welcome to the Research Intelligence System.")
         self._append_system("Type a message below and press Enter or Send. Type /reset to clear history.")
 
@@ -87,8 +85,7 @@ class ChatPanel(QWidget):
             self.model_selector.addItem(label)
         layout.addWidget(self.model_selector)
 
-        # REMOVED: server_status_label
-
+        # Tabs
         self.tabs = QTabWidget(self)
         layout.addWidget(self.tabs, stretch=1)
 
@@ -100,9 +97,7 @@ class ChatPanel(QWidget):
         # Scroll area
         self.scroll_area = QScrollArea(self)
         self.scroll_area.setWidgetResizable(True)
-        self.scroll_area.setHorizontalScrollBarPolicy(
-            Qt.ScrollBarPolicy.ScrollBarAlwaysOff
-        )
+        self.scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
         self.scroll_container = QWidget()
         self.message_layout = QVBoxLayout(self.scroll_container)
@@ -145,6 +140,12 @@ class ChatPanel(QWidget):
 
     def _connect_signals(self) -> None:
         self.send_button.clicked.connect(self._on_send_clicked)
+        self.model_selector.currentIndexChanged.connect(self._on_model_changed)
+
+    def _on_model_changed(self):
+        label = self.model_selector.currentText()
+        self.model_override = MODEL_OPTIONS[label]
+        self._append_system(f"Model override set to: {label}")
 
     # ---------------------------------------------------------- Message Helpers
 

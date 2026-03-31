@@ -9,7 +9,9 @@ from ingestion.vector_store import VectorStore, VectorStoreConfig
 from ingestion.extract_text import extract_text
 from ingestion.extract_metadata import extract_metadata
 from ingestion.chunker import chunk_text
+from ingestion.code_chunker import chunk_code_ast
 from ingestion.embedder import Embedder, EmbeddingModelConfig
+from ingestion.code_scanner import scan_codebase
 
 
 # ------------------------------------------------------------
@@ -35,17 +37,12 @@ class PipelineConfig:
 
 class PaperIngestionPipeline:
     """
-    Orchestrates ingestion of a single scientific paper:
-    - text extraction
-    - metadata extraction
-    - duplicate detection
-    - chunking
-    - embedding
-    - vector store insertion
+    Orchestrates ingestion of:
+    - scientific papers (PDFs, text docs)
+    - RIS's own codebase (Python files)
     """
 
     def __init__(self, config: Optional[PipelineConfig] = None):
-        # Avoid mutable default arguments
         self.config = config if config is not None else PipelineConfig()
 
         # Initialize vector store + embedder
@@ -53,7 +50,7 @@ class PaperIngestionPipeline:
         self.embedder = Embedder(self.config.embedder)
 
     # --------------------------------------------------------
-    # Main entry point
+    # Paper ingestion
     # --------------------------------------------------------
 
     def ingest(self, path: str, progress_callback: Optional[Callable[[str], None]] = None):
@@ -131,4 +128,81 @@ class PaperIngestionPipeline:
             "paper_id": paper_id,
             "metadata": metadata,
             "num_chunks": len(chunks),
+        }
+
+    # --------------------------------------------------------
+    # Code ingestion
+    # --------------------------------------------------------
+
+    def ingest_codebase(self, root: Optional[str] = None, progress_callback: Optional[Callable[[str], None]] = None):
+        """
+        Ingest RIS's own codebase:
+        - scan for .py files
+        - chunk code (code-aware)
+        - embed chunks
+        - store in vector DB
+        """
+
+        def log(msg: str):
+            print(f"[CodeIngest] {msg}")
+            if progress_callback:
+                progress_callback(msg)
+
+        # Default root = src/
+        root_path = Path(root) if root else Path(__file__).parent.parent
+
+        log(f"Scanning codebase at: {root_path}")
+
+        # Step 1: Scan for code files
+        files = scan_codebase(root_path)
+        log(f"Found {len(files)} code files.")
+
+        all_chunks = []
+        for f in files:
+            log(f"Chunking {f.module}...")
+
+            try:
+                text = f.path.read_text(encoding="utf-8", errors="ignore")
+            except Exception as e:
+                log(f"Failed to read {f.path}: {e}")
+                continue
+
+            # Code-aware chunking
+            chunks = chunk_code_ast(
+                text=text,
+                module=f.module,
+                max_tokens=self.config.max_tokens,
+                overlap=self.config.overlap,
+            )
+
+            # Attach metadata
+            for c in chunks:
+                c.metadata = {
+                    "type": "code",
+                    "module": f.module,
+                    "path": str(f.path),
+                }
+                c.metadata["block_type"] = c.block_type
+                c.metadata["name"] = c.name
+
+
+            all_chunks.extend(chunks)
+
+        log(f"Created {len(all_chunks)} code chunks.")
+
+        # Step 2: Embed
+        log("Embedding code chunks...")
+        chunk_texts = [c.text for c in all_chunks]
+        embeddings = self.embedder.embed(chunk_texts)
+
+        # Step 3: Store
+        log("Storing code chunks in vector store...")
+        self.vs.insert_code_chunks(all_chunks, embeddings)
+
+        log("Code ingestion complete.")
+
+        return {
+            "status": "success",
+            "files": len(files),
+            "chunks": len(all_chunks),
         }

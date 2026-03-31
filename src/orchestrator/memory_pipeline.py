@@ -1,10 +1,10 @@
-# src/orchestrator/memory_pipeline.py
 """
 Memory pipeline for the orchestrator.
 
 Responsibilities:
 - Handle semantic confirmation replies
 - Handle memory mode commands (expanded/minimal/conservative)
+- Handle explicit /memory commands (list/search/forget/clean)
 - Handle natural-language memory commands
 - Decide whether the message is fully handled by memory logic
 """
@@ -17,6 +17,7 @@ from memory import log_message
 from orchestrator.logging import log_event
 
 import orchestrator.semantic_manager as semantic_manager
+from orchestrator.memory_cleaner import handle_memory_command
 
 
 @dataclass
@@ -60,14 +61,13 @@ def process_memory_pipeline(
     Runs the memory pipeline:
       0. Semantic confirmation replies
       1. Memory mode commands
-      2. Natural-language memory commands
+      2. /memory commands
+      3. Natural-language memory commands
 
     Returns a MemoryPipelineResult.
     """
 
-    # ------------------------------------------------------------
     # 0. Semantic confirmation replies (highest priority)
-    # ------------------------------------------------------------
     if semantic_manager.has_pending_facts():
         result = semantic_manager.handle_confirmation_reply(user_message)
         if result is not None:
@@ -78,9 +78,7 @@ def process_memory_pipeline(
                 reply=result.message_to_user,
             )
 
-    # ------------------------------------------------------------
     # 1. Memory mode commands
-    # ------------------------------------------------------------
     mode_reply = maybe_handle_memory_mode_command(user_message, retrieval_mode_ref)
     if mode_reply is not None:
         log_message("user", user_message)
@@ -90,9 +88,18 @@ def process_memory_pipeline(
             reply=mode_reply,
         )
 
-    # ------------------------------------------------------------
-    # 2. Natural-language memory commands
-    # ------------------------------------------------------------
+    # 2. Explicit /memory commands (list/search/forget/clean)
+    memory_cmd_reply = handle_memory_command(user_message)
+    if memory_cmd_reply is not None:
+        log_event("Handled /memory command", {})
+        log_message("user", user_message)
+        log_message("assistant", memory_cmd_reply)
+        return MemoryPipelineResult(
+            intercepted=True,
+            reply=memory_cmd_reply,
+        )
+
+    # 3. Natural-language memory commands
     nl_reply = handle_nl_command(user_message)
     if nl_reply is not None:
         log_event("Handled natural-language memory command", {})
@@ -103,9 +110,6 @@ def process_memory_pipeline(
             reply=nl_reply,
         )
 
-    # ------------------------------------------------------------
-    # Not intercepted; orchestrator should proceed normally
-    # ------------------------------------------------------------
     return MemoryPipelineResult(
         intercepted=False,
         reply=None,

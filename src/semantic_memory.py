@@ -20,7 +20,6 @@ DAILY_DECAY_RATE = 0.995          # very slow decay
 REINFORCEMENT_AMOUNT = 0.20       # stronger reinforcement than episodic
 MIN_WEIGHT = 0.10                 # semantic facts rarely drop below this
 
-
 # ---------------------------------------------------------------------
 # Utility: load + save
 # ---------------------------------------------------------------------
@@ -56,6 +55,7 @@ def _save_semantic_entries(entries: List[Dict]) -> None:
         for entry in entries:
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
+print("Semantic memory writing to:", SEMANTIC_MEMORY_PATH)
 
 # ---------------------------------------------------------------------
 # Decay

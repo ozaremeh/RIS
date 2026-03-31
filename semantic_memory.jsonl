@@ -1,21 +1,17 @@
-{"timestamp": "2026-03-16T12:41:38", "fact": "The user plans to work on their F31 application after the model is running properly.", "tags": [], "weight": 9.108999991528973}
-{"timestamp": "2026-03-16T13:12:50", "fact": "I am a structural biology/biophysics PhD student at Purdue University.", "tags": [], "weight": 2.9468667103867543}
-{"timestamp": "2026-03-18T13:31:12", "fact": "RIS is a stable identifier for the user.", "tags": [], "weight": 14.16052252483742}
-{"timestamp": "2026-03-18T14:02:48", "fact": "EphA2 is a protein involved in cell signaling pathways that can contribute to cancer development when mutated or overexpressed.", "tags": [], "weight": 1.1141607206332438}
-{"timestamp": "2026-03-18T14:02:48", "fact": "The understanding of EphA2's role in oncogenesis contributes to the domain of medical research, specifically in tumor biology and targeted therapies.", "tags": [], "weight": 10.120122324378464}
-{"timestamp": "2026-03-18T14:20:35", "fact": "Seeking knowledge about a specific film series", "tags": [], "weight": 0.7876259721946126}
-{"timestamp": "2026-03-18T14:22:25", "fact": "The user is addressing a service or platform with the abbreviation 'RIS' in their username.", "tags": [], "weight": 0.9394356423586712}
-{"timestamp": "2026-03-18T14:35:25", "fact": "The user is interested in understanding character development within narratives.", "tags": [], "weight": 1.071436512752904}
-{"timestamp": "2026-03-18T14:36:16", "fact": "This interest may indicate that the user enjoys or works with storytelling, which could be a durable characteristic or identity.", "tags": [], "weight": 0.9604907849937564}
-{"timestamp": "2026-03-18T15:26:36", "fact": "favorite tea is Earl Grey", "tags": [], "weight": 0.9856975744750823}
-{"timestamp": "2026-03-18T15:27:26", "fact": "RIS is a stable identifier for the assistant.", "tags": [], "weight": 2.4952132429741662}
-{"timestamp": "2026-03-19T12:07:38", "fact": "The user wants to be able to run a 5K in approximately 4 months.", "tags": [], "weight": 0.8020760579717642}
-{"timestamp": "2026-03-20T14:25:48", "fact": "The user wants a detailed summary of the role of differential phosphorylation on GAP/GEF function in their role as second messengers.", "tags": [], "weight": 1.2}
-{"timestamp": "2026-03-20T15:25:26", "fact": "A domain fact stating that potatoes have a historical background", "tags": [], "weight": 1.0}
-{"timestamp": "2026-03-20T15:29:35", "fact": "Rice is a domain fact that the user states as true by asking for its history.", "tags": [], "weight": 1.0}
-{"timestamp": "2026-03-21T13:40:19", "fact": "An orchestrator in a multi-model AI system is used to manage the workflow and coordinate interactions between different models.", "tags": [], "weight": 1.0}
-{"timestamp": "2026-03-21T13:42:24", "fact": "The purpose is to ensure the seamless and efficient operation of the system.", "tags": [], "weight": 1.0}
-{"timestamp": "2026-03-21T13:45:42", "fact": "The shape of coke bottles has remained consistent and is not likely to change in the foreseeable future.", "tags": [], "weight": 1.0}
-{"timestamp": "2026-03-21T13:45:42", "fact": "The shape of coke bottles has been a durable characteristic since the start of Coke's product.", "tags": [], "weight": 1.0}
-{"timestamp": "2026-03-21T13:48:12", "fact": "Build a mathematical ode model of the angiotensin II system", "tags": [], "weight": 1.0}
-{"timestamp": "2026-03-21T14:19:38", "fact": "A tool built into MacBooks to monitor real-time memory usage is available.", "tags": [], "weight": 1.0}
+{"timestamp": "2026-03-16T12:41:38", "fact": "The user plans to work on their F31 application after the model is running properly.", "tags": [], "weight": 3.091987251947714}
+{"timestamp": "2026-03-16T13:12:50", "fact": "I am a structural biology/biophysics PhD student at Purdue University.", "tags": [], "weight": 0.8547371786548646}
+{"timestamp": "2026-03-18T15:27:26", "fact": "RIS is a stable identifier for the assistant.", "tags": [], "weight": 1.5505363779957793}
+{"timestamp": "2026-03-19T12:07:38", "fact": "The user wants to be able to run a 5K in approximately 4 months.", "tags": [], "weight": 0.1}
+{"timestamp": "2026-03-25T09:35:25", "fact": "the user may have a longer-term goal to understand and summarize the orchestrator flow", "tags": [], "weight": 1.2028003960289062}
+{"timestamp": "2026-03-25T09:48:06", "fact": "System function and purpose are long-term project or goals", "tags": [], "weight": 3.782146588809803}
+{"timestamp": "2026-03-25T09:49:04", "fact": "a durable characteristic or identity", "tags": [], "weight": 1.3843696775382819}
+{"timestamp": "2026-03-25T10:29:50", "fact": "A 'semantic fact' is a stable preference, personal detail unlikely to change, long-term project or goal, domain fact the user states as true.", "tags": [], "weight": 0.7896148931024856}
+{"timestamp": "2026-03-25T12:03:04", "fact": "My computer is a 2026 M5 Max MacBook Pro with unified RAM of 128 GB and a hard drive capacity of 2 TB.", "tags": [], "weight": 1.5009204569055337}
+{"timestamp": "2026-03-25T12:03:33", "fact": "My favorite food is lasagne", "tags": [], "weight": 0.9328194139154959}
+{"timestamp": "2026-03-25T13:38:48", "fact": "I prefer my coffee with 2 sugars", "tags": [], "weight": 1.133377168845019}
+{"timestamp": "2026-03-25T13:48:08", "fact": "I was born July 31, 1982", "tags": [], "weight": 0.8239717118246394}
+{"timestamp": "2026-03-25T13:56:25", "fact": "I like Star Wars", "tags": [], "weight": 0.8239717118246394}
+{"timestamp": "2026-03-25T14:02:06", "fact": "I like key lime pie and key lime tarts", "tags": [], "weight": 0.6866430931872002}
+{"timestamp": "2026-03-25T14:38:08", "fact": "The world inspired by Waterworld is aquatic with mountains forming islands.", "tags": [], "weight": 0.7183288830986235}
+{"timestamp": "2026-03-25T14:38:08", "fact": "Your friend's initial hope/dream is to reach the highest possible level of success.", "tags": [], "weight": 1.040256383035116}
+{"timestamp": "2026-03-25T14:38:08", "fact": "You are leaning towards either a monk or druid class for the new game.", "tags": [], "weight": 6.381388172339705}

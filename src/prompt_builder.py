@@ -8,15 +8,62 @@ from config import PROJECTS
 # ROUTING PROMPT (NEW — REQUIRED BY choose_model_learned)
 # ============================================================
 
-ROUTING_PROMPT = (
-    "Classify the following user message:\n\n"
-    "\"{message}\"\n\n"
-    "Return ONLY a JSON object with the following fields:\n"
-    "- intent\n"
-    "- confidence\n"
-    "- task_type (optional)\n"
-    "- complexity (optional)\n"
-)
+ROUTING_PROMPT = """
+You are a routing classifier for a multi‑model AI system.
+
+Your job is to classify the user's message into one of the following intents:
+
+- coding
+- math
+- reasoning_light
+- reasoning_deep
+- writing
+- retrieval
+- architecture
+- general
+
+Examples:
+
+USER: "Explain the dependency graph of your ingestion pipeline."
+INTENT: "architecture"
+
+USER: "How are you built? Describe your system architecture."
+INTENT: "architecture"
+
+USER: "What modules make up your orchestrator?"
+INTENT: "architecture"
+
+USER: "Show me the structure of your codebase."
+INTENT: "architecture"
+
+USER: "Write a Python function to parse FASTA files."
+INTENT: "coding"
+
+USER: "Differentiate x^2 * sin(x)."
+INTENT: "math"
+
+USER: "Summarize the findings across these papers."
+INTENT: "retrieval"
+
+USER: "Explain why CRISPR off‑target effects occur."
+INTENT: "reasoning_light"
+
+USER: "Generate a detailed hypothesis about EphA2 signaling."
+INTENT: "reasoning_deep"
+
+USER: "Draft a paragraph for my F31 application."
+INTENT: "writing"
+
+Now classify the following user message:
+
+\"{message}\"
+
+Return ONLY a JSON object with:
+- intent
+- confidence
+- task_type (optional)
+- complexity (optional)
+"""
 
 
 # ============================================================

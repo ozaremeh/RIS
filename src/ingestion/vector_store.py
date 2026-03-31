@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import lancedb
 import pyarrow as pa
-from lancedb import vector  # <-- correct import for your version
+from lancedb import vector
 
 
 # ------------------------------------------------------------
@@ -19,6 +19,7 @@ class VectorStoreConfig:
     db_path: str = "/Users/ozare/research-intelligence/research_memory.lancedb"
     papers_table: str = "papers"
     chunks_table: str = "chunks"
+    code_chunks_table: str = "code_chunks"
 
 
 # ------------------------------------------------------------
@@ -43,6 +44,7 @@ class VectorStore:
         # Open tables
         self.papers = self.db.open_table(self.config.papers_table)
         self.chunks = self.db.open_table(self.config.chunks_table)
+        self.code_chunks = self.db.open_table(self.config.code_chunks_table)
 
         # Validate schema
         self._validate_schema()
@@ -56,6 +58,9 @@ class VectorStore:
         Create tables with locked schema BEFORE ingestion.
         """
 
+        # -------------------------
+        # Papers table
+        # -------------------------
         papers_schema = pa.schema([
             pa.field("paper_id", pa.string()),
             pa.field("title", pa.string()),
@@ -67,7 +72,9 @@ class VectorStore:
             pa.field("ingested_at", pa.string()),
         ])
 
-        # FIXED: correct vector() signature for your LanceDB version
+        # -------------------------
+        # Paper chunks table
+        # -------------------------
         chunks_schema = pa.schema([
             pa.field("chunk_id", pa.string()),
             pa.field("paper_id", pa.string()),
@@ -76,9 +83,22 @@ class VectorStore:
             pa.field("token_start", pa.int32()),
             pa.field("token_end", pa.int32()),
             pa.field("text", pa.string()),
-            pa.field("embedding", vector(384, pa.float32())),  # <-- FIXED
+            pa.field("embedding", vector(384, pa.float32())),
         ])
 
+        # -------------------------
+        # Code chunks table
+        # -------------------------
+        code_chunks_schema = pa.schema([
+            pa.field("chunk_id", pa.string()),
+            pa.field("module", pa.string()),
+            pa.field("path", pa.string()),
+            pa.field("chunk_index", pa.int32()),
+            pa.field("text", pa.string()),
+            pa.field("embedding", vector(384, pa.float32())),
+        ])
+
+        # Create tables if missing
         if self.config.papers_table not in self.db.table_names():
             print(">>> Creating papers table with locked schema")
             self.db.create_table(self.config.papers_table, schema=papers_schema)
@@ -87,36 +107,47 @@ class VectorStore:
             print(">>> Creating chunks table with locked schema")
             self.db.create_table(self.config.chunks_table, schema=chunks_schema)
 
+        if self.config.code_chunks_table not in self.db.table_names():
+            print(">>> Creating code_chunks table with locked schema")
+            self.db.create_table(self.config.code_chunks_table, schema=code_chunks_schema)
+
     # --------------------------------------------------------
     # Schema Validation
     # --------------------------------------------------------
 
     def _validate_schema(self):
-        schema = self.db.open_table(self.config.chunks_table).schema
-        emb_field = schema.field("embedding")
+        """
+        Validate that all embedding columns are fixed-size float32[384].
+        """
 
-        if emb_field is None:
-            raise RuntimeError("ERROR: 'embedding' column missing from schema.")
+        def validate(table_name: str):
+            schema = self.db.open_table(table_name).schema
+            emb_field = schema.field("embedding")
 
-        t = emb_field.type
+            if emb_field is None:
+                raise RuntimeError(f"ERROR: 'embedding' column missing from {table_name}.")
 
-        # Must be a fixed-size vector<float32>[384]
-        if not hasattr(t, "list_size"):
-            raise RuntimeError(
-                f"ERROR: embedding column is {t}, expected fixed_size_list<float32>[384]."
-            )
+            t = emb_field.type
 
-        if t.value_type != pa.float32():
-            raise RuntimeError(
-                f"ERROR: embedding column dtype is {t.value_type}, expected float32."
-            )
+            if not hasattr(t, "list_size"):
+                raise RuntimeError(
+                    f"ERROR: embedding column in {table_name} is {t}, expected fixed_size_list<float32>[384]."
+                )
 
-        if t.list_size != 384:
-            raise RuntimeError(
-                f"ERROR: embedding dimension is {t.list_size}, expected 384."
-            )
+            if t.value_type != pa.float32():
+                raise RuntimeError(
+                    f"ERROR: embedding dtype in {table_name} is {t.value_type}, expected float32."
+                )
 
-        print(">>> Schema validated: embedding is fixed_size_list<float32>[384]")
+            if t.list_size != 384:
+                raise RuntimeError(
+                    f"ERROR: embedding dimension in {table_name} is {t.list_size}, expected 384."
+                )
+
+            print(f">>> Schema validated for {table_name}: embedding is fixed_size_list<float32>[384]")
+
+        validate(self.config.chunks_table)
+        validate(self.config.code_chunks_table)
 
     # --------------------------------------------------------
     # Paper-level operations
@@ -147,7 +178,7 @@ class VectorStore:
         return paper_id
 
     # --------------------------------------------------------
-    # Chunk-level operations
+    # Chunk-level operations (papers)
     # --------------------------------------------------------
 
     def insert_chunks(self, paper_id: str, chunks: List[Any], embeddings: List[List[float]]):
@@ -155,9 +186,6 @@ class VectorStore:
 
         for chunk, emb in zip(chunks, embeddings):
             emb32 = np.asarray(emb, dtype=np.float32)
-
-            if emb32.dtype != np.float32:
-                raise RuntimeError("Embedding conversion to float32 failed.")
 
             if emb32.shape[0] != 384:
                 raise RuntimeError(
@@ -173,11 +201,39 @@ class VectorStore:
                     "token_start": chunk.token_start,
                     "token_end": chunk.token_end,
                     "text": chunk.text,
-                    "embedding": emb32,  # <-- store NumPy array, not list
+                    "embedding": emb32,
                 }
             )
 
         self.chunks.add(rows)
+
+    # --------------------------------------------------------
+    # Chunk-level operations (code)
+    # --------------------------------------------------------
+
+    def insert_code_chunks(self, chunks: List[Any], embeddings: List[List[float]]):
+        rows = []
+
+        for chunk, emb in zip(chunks, embeddings):
+            emb32 = np.asarray(emb, dtype=np.float32)
+
+            if emb32.shape[0] != 384:
+                raise RuntimeError(
+                    f"Embedding dimension mismatch: got {emb32.shape[0]}, expected 384."
+                )
+
+            rows.append(
+                {
+                    "chunk_id": f"{chunk.metadata['module']}_{chunk.chunk_index}",
+                    "module": chunk.metadata["module"],
+                    "path": chunk.metadata["path"],
+                    "chunk_index": chunk.chunk_index,
+                    "text": chunk.text,
+                    "embedding": emb32,
+                }
+            )
+
+        self.code_chunks.add(rows)
 
     # --------------------------------------------------------
     # Query operations
@@ -193,11 +249,18 @@ class VectorStore:
 
         return self.chunks.search(q).limit(k).to_list()
 
+    def search_code(self, query_vector: List[float], k: int = 5):
+        q = np.asarray(query_vector, dtype=np.float32)
+
+        if q.shape[0] != 384:
+            raise RuntimeError(
+                f"Query vector dimension mismatch: got {q.shape[0]}, expected 384."
+            )
+
+        return self.code_chunks.search(q).limit(k).to_list()
+
     def get_paper_by_doi(self, doi: str):
         return self.papers.search().where(f"doi == '{doi}'").to_list()
 
     def get_chunks_by_paper(self, paper_id: str):
         return self.chunks.search().where(f"paper_id == '{paper_id}'").to_list()
-
-    def get_papers_by_year(self, year: int):
-        return self.papers.search().where(f"year == {year}").to_list()

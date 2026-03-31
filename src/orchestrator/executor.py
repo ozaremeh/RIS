@@ -20,6 +20,10 @@ from model_registry import get_model
 from orchestrator.logging import log_event
 from orchestrator.lifecycle import handle_specialist_continuity
 from orchestrator.history import get_history
+from reasoning.literature_reasoner import run_literature_reasoner
+
+# NEW: architecture retrieval
+from retrieval_architecture import architecture_query
 
 
 # ---------------------------------------------------------------------
@@ -183,6 +187,36 @@ def select_streaming_model(
     # Router-selected: use the first model key and resolve via model_registry
     model_key = routing_plan.models[0]
     model_info = get_model(model_key)
+
+    # NEW: architecture model does not have a port or LLM backend
+    if model_key == "architecture":
+        return "architecture_retriever", "internal-architecture"
+
     model_name = model_info["model_name"]
     reason = f"router-first ({model_key})"
     return model_name, reason
+
+
+# ---------------------------------------------------------------------
+# NEW: Internal architecture model execution
+# ---------------------------------------------------------------------
+
+def run_internal_model(model_key: str, prompt: str) -> str:
+    import json
+
+    if model_key == "architecture":
+        result = architecture_query(prompt)
+
+        # Force serialization BEFORE anything else touches it
+        try:
+            safe = json.dumps(result, indent=2, default=str)
+        except Exception:
+            safe = str(result)
+
+        return safe
+    
+    elif model_key == "literature_reasoner":
+        return run_literature_reasoner(prompt)
+
+    return "[Error] Unknown internal model."
+

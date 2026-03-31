@@ -32,7 +32,9 @@ Classify the user's message into one of the following intents:
 - reasoning_deep
 - writing
 - retrieval
+- architecture
 - general
+
 
 Respond ONLY with a JSON object in this format:
 

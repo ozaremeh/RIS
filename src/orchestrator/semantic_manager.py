@@ -28,7 +28,7 @@ class SemanticExtractionResult:
 
 @dataclass
 class SemanticConfirmationResult:
-    """Returned after the user responds to a confirmation prompt."""
+    """Returned after the user responds to a semantic prompt."""
     stored_facts: List[str]
     ignored_facts: List[str]
     rewritten_fact: Optional[str]
@@ -36,7 +36,7 @@ class SemanticConfirmationResult:
 
 
 # ---------------------------------------------------------------------
-# Pending semantic facts (awaiting user confirmation)
+# Pending semantic facts
 # ---------------------------------------------------------------------
 
 _pending_facts: List[str] = []
@@ -62,11 +62,29 @@ def consume_pending_facts() -> List[str]:
 # Extraction (post‑reply)
 # ---------------------------------------------------------------------
 
-def extract_facts_from_user_message(user_message: str) -> SemanticExtractionResult:
+def extract_facts_from_user_message(
+    user_message: str,
+    model_key: Optional[str] = None,
+) -> SemanticExtractionResult:
     """
     Extract medium‑confidence semantic facts from the user message.
-    This is called AFTER the assistant reply is generated.
+    Called AFTER the assistant reply is generated.
+
+    NEW:
+    Architecture model output should NEVER trigger semantic memory.
     """
+
+    # ------------------------------------------------------------
+    # NEW: Skip semantic memory for architecture model
+    # ------------------------------------------------------------
+    if model_key in ("architecture", "architecture_retriever"):
+        return SemanticExtractionResult(
+            has_facts=False,
+            facts=[],
+            confirmation_prompt=None,
+        )
+
+    # Normal semantic extraction
     facts = extract_and_store_facts(user_message)
 
     if not facts:
@@ -102,22 +120,13 @@ def interpret_confirmation_reply(
     user_reply: str,
     pending_facts: List[str],
 ) -> SemanticConfirmationResult:
-    """
-    Interpret the user's reply to a semantic‑memory confirmation prompt.
-
-    Supports:
-    - yes / y / ok / sure → store all
-    - no / n / nope → store none
-    - rewritten fact → store rewritten version
-    - partial acceptance → "store X", "only the first one", etc.
-    """
 
     text = user_reply.strip().lower()
 
     yes_set = {"yes", "y", "sure", "ok", "okay", "yeah"}
     no_set = {"no", "n", "nope"}
 
-    # 1. YES → store all pending facts
+    # YES → store all
     if text in yes_set:
         for f in pending_facts:
             add_semantic_fact(f)
@@ -128,7 +137,7 @@ def interpret_confirmation_reply(
             message_to_user="Stored.",
         )
 
-    # 2. NO → store nothing
+    # NO → store none
     if text in no_set:
         return SemanticConfirmationResult(
             stored_facts=[],
@@ -137,7 +146,7 @@ def interpret_confirmation_reply(
             message_to_user="Okay — I won’t store it.",
         )
 
-    # 3. PARTIAL ACCEPTANCE (match original facts verbatim)
+    # PARTIAL ACCEPTANCE
     matched = []
     for f in pending_facts:
         if f.lower() in text:
@@ -154,7 +163,7 @@ def interpret_confirmation_reply(
             message_to_user="Stored the ones you indicated.",
         )
 
-    # 4. REWRITTEN FACT
+    # REWRITTEN FACT
     rewritten = user_reply.strip()
     if rewritten:
         add_semantic_fact(rewritten)
@@ -165,7 +174,7 @@ def interpret_confirmation_reply(
             message_to_user="Stored your rewritten version.",
         )
 
-    # 5. Fallback — store nothing
+    # Fallback
     return SemanticConfirmationResult(
         stored_facts=[],
         ignored_facts=pending_facts,
@@ -175,14 +184,10 @@ def interpret_confirmation_reply(
 
 
 # ---------------------------------------------------------------------
-# High-level handler for confirmation replies
+# High-level handler
 # ---------------------------------------------------------------------
 
 def handle_confirmation_reply(user_reply: str) -> Optional[SemanticConfirmationResult]:
-    """
-    Called when the user responds to a semantic-memory confirmation prompt.
-    Returns None if there are no pending facts.
-    """
     if not has_pending_facts():
         return None
 

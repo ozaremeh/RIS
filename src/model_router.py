@@ -63,12 +63,13 @@ Classify the user's message into one of the following intents:
 - reasoning_deep
 - writing
 - retrieval
+- architecture
 - general
 
 Respond ONLY with a JSON object in this format:
 
 {{
-  "intent": "<coding | math | reasoning_light | reasoning_deep | writing | retrieval | general>",
+  "intent": "<coding | math | reasoning_light | reasoning_deep | writing | retrieval | architecture | general>",
   "confidence": <float between 0 and 1>
 }}
 
@@ -119,6 +120,26 @@ def rule_based_intent(user_message: str) -> str:
         "theorem", "lemma", "proof", "compute", "evaluate"
     ]):
         return "math"
+    
+    # Literature Reasoner (explicit prefix or natural-language triggers)
+    if lower.startswith("lit:") or lower.startswith("literature:"):
+        return "literature_reasoner"
+
+    LIT_TRIGGERS = [
+        "based on the literature",
+        "from the literature",
+        "from the papers",
+        "from the evidence",
+        "what does the literature say",
+        "across papers",
+        "according to the papers",
+        "according to the evidence",
+        "mechanisms link",
+        "mechanisms connect",
+    ]
+
+    if any(trigger in lower for trigger in LIT_TRIGGERS):
+        return "literature_reasoner"
 
     # Deep reasoning (literature synthesis, hypothesis generation)
     if any(k in lower for k in [
@@ -139,6 +160,14 @@ def rule_based_intent(user_message: str) -> str:
     # Retrieval
     if any(k in lower for k in ["paper", "study", "literature", "citation", "epha2"]):
         return "retrieval"
+
+    # Architecture / dependency graph queries
+    if any(k in lower for k in [
+        "dependency", "dependencies", "imports", "import graph",
+        "call graph", "architecture", "module graph", "who imports",
+        "who calls", "list classes", "list functions", "show dependencies"
+    ]):
+        return "architecture"
 
     return "general"
 
@@ -170,7 +199,7 @@ class Router:
         return self._intent_to_plan(intent, prompt, {"reason": "rule-based fallback"})
 
     def _intent_to_plan(self, intent: str, prompt: str, metadata: Dict[str, Any]) -> RoutingPlan:
-
+        
         if intent == "coding":
             return RoutingPlan(
                 strategy="parallel",
@@ -179,6 +208,22 @@ class Router:
                 metadata={"intent": intent, **metadata},
             )
 
+        if intent == "literature_reasoner":
+            return RoutingPlan(
+                strategy="single",
+                models=["literature_reasoner"],  # internal model
+                prompt=prompt,
+                metadata={"intent": intent, **metadata},
+            )
+        
+        if intent == "literature_reasoner":
+            return RoutingPlan(
+                strategy="single",
+                models=["literature_reasoner"],  # internal model
+                prompt=prompt,
+                metadata={"intent": intent, **metadata},
+            )
+    
         if intent == "math":
             return RoutingPlan(
                 strategy="single",
@@ -215,6 +260,14 @@ class Router:
             return RoutingPlan(
                 strategy="sequential",
                 models=["embedder", "writer"],  # embedder → Qwen72B
+                prompt=prompt,
+                metadata={"intent": intent, **metadata},
+            )
+
+        if intent == "architecture":
+            return RoutingPlan(
+                strategy="single",
+                models=["architecture"],   # internal architecture retriever
                 prompt=prompt,
                 metadata={"intent": intent, **metadata},
             )
